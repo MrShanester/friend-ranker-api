@@ -64,3 +64,42 @@ Content-Type: application/json
 DELETE http://localhost:3000/friends/1.json
 Content-Type: application/json
 
+
+
+# Good Deeds Routes
+
+### good_deeds Index
+GET http://localhost:3000/good_deeds.json
+Content-Type: application/json
+
+### good_deeds Show
+GET http://localhost:3000/good_deeds/1.json
+Content-Type: application/json
+
+### good_deeds Create
+POST http://localhost:3000/good_deeds.json
+Content-Type: application/json
+
+{
+  "title": "Gave me a cookie",
+  "description": "was choclate and peanut butter",
+  "value": 1400,
+  "friend_id": 2,
+  "image_url": ""
+}
+
+### good_deeds Update
+PATCH http://localhost:3000/good_deeds/1.json
+Content-Type: application/json
+
+{
+  "title": "Gave me a cookie",
+  "description": "was choclate and peanut butter",
+  "value": 1400,
+  "friend_id": 2,
+  "image_url": "bb"
+}
+
+### good_deeds delete
+DELETE http://localhost:3000/good_deeds/1.json
+Content-Type: application/json

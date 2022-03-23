@@ -11,4 +11,11 @@ Rails.application.routes.draw do
   post "friends" => "friends#create"
   patch "friends/:id" => "friends#update"
   delete "friends/:id" => "friends#destroy"
+
+  # good_deeds routes
+  get "good_deeds" => "good_deeds#index"
+  get "good_deeds/:id" => "good_deeds#show"
+  post "good_deeds" => "good_deeds#create"
+  patch "good_deeds/:id" => "good_deeds#update"
+  delete "good_deeds/:id" => "good_deeds#destroy"
 end
