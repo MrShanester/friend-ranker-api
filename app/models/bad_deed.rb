@@ -1,0 +1,2 @@
+class BadDeed < ApplicationRecord
+end
