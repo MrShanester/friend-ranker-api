@@ -23,3 +23,44 @@ Content-Type: application/json
 GET http://localhost:3000/users.json
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgxNDQxMTR9.98wKgVTM9wLxF5teeR13LfHT2a8xB8ZOjybD-MNv-LI
+
+
+
+# Friends HTTP Tests
+
+
+
+### Friends Index
+GET http://localhost:3000/friends.json
+Content-Type: application/json
+
+### Friends Show
+GET http://localhost:3000/friends/1.json
+Content-Type: application/json
+
+### Friends Create
+POST http://localhost:3000/friends.json
+Content-Type: application/json
+
+{
+  "name": "Alex",
+  "details": "Tall, loveable, and sassy. Way too good at video games.",
+  "points": 0,
+  "image_url": ""
+}
+
+### Friend Update
+PATCH http://localhost:3000/friends/1.json
+Content-Type: application/json
+
+{
+  "name": "Alex",
+  "details": "Tall, loveable, and sassy. Way too good at video games.",
+  "points": 0,
+  "image_url": "Gobblydegook"
+}
+
+### Friend Delete
+DELETE http://localhost:3000/friends/1.json
+Content-Type: application/json
+
