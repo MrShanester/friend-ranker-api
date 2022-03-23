@@ -1,0 +1,2 @@
+class BadDeedsController < ApplicationController
+end

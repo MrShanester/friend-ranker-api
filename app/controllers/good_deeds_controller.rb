@@ -1,0 +1,2 @@
+class GoodDeedsController < ApplicationController
+end
