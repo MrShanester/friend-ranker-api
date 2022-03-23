@@ -103,3 +103,43 @@ Content-Type: application/json
 ### good_deeds delete
 DELETE http://localhost:3000/good_deeds/1.json
 Content-Type: application/json
+
+
+
+# Bad Deeds Routes
+
+### bad_deeds Index
+GET http://localhost:3000/bad_deeds.json
+Content-Type: application/json
+
+### bad_deeds Show
+GET http://localhost:3000/bad_deeds/1.json
+Content-Type: application/json
+
+### bad_deeds Create
+POST http://localhost:3000/bad_deeds.json
+Content-Type: application/json
+
+{
+  "title": "Gave me a cookie",
+  "description": "was choclate and peanut butter",
+  "value": 1400,
+  "friend_id": 2,
+  "image_url": ""
+}
+
+### bad_deeds Update
+PATCH http://localhost:3000/bad_deeds/1.json
+Content-Type: application/json
+
+{
+  "title": "Gave me a cookie",
+  "description": "was choclate and peanut butter",
+  "value": 1400,
+  "friend_id": 2,
+  "image_url": "bb"
+}
+
+### bad_deeds delete
+DELETE http://localhost:3000/bad_deeds/1.json
+Content-Type: application/json

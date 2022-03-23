@@ -18,4 +18,11 @@ Rails.application.routes.draw do
   post "good_deeds" => "good_deeds#create"
   patch "good_deeds/:id" => "good_deeds#update"
   delete "good_deeds/:id" => "good_deeds#destroy"
+
+  # bad_deeds routes
+  get "bad_deeds" => "bad_deeds#index"
+  get "bad_deeds/:id" => "bad_deeds#show"
+  post "bad_deeds" => "bad_deeds#create"
+  patch "bad_deeds/:id" => "bad_deeds#update"
+  delete "bad_deeds/:id" => "bad_deeds#destroy"
 end
