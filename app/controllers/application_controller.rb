@@ -22,4 +22,10 @@ class ApplicationController < ActionController::API
       render json: {}, status: :unauthorized
     end
   end
+
+  def authenticate_admin
+    unless current_user.admin
+      render json: {message: "That is an admin request"}, status: :unauthorized
+    end
+  end
 end
