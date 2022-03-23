@@ -1,7 +1,7 @@
 class FriendsController < ApplicationController
   def index
     friends = Friend.all
-    render json: friends.as_json
+    render json: {message: "Hi Friends!", friend: friends.as_json}
   end
 
   def show
